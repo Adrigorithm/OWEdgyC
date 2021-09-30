@@ -16,6 +16,13 @@ namespace OWEdgyC.Constants
             HourlyForecast = new KeyValuePair<int, RateLimitPeriod>(2000, RateLimitPeriod.Day);
             NationalWeatherAlerts = new KeyValuePair<int, RateLimitPeriod>(2000, RateLimitPeriod.Day);
             HistoricalWeather = new KeyValuePair<int, RateLimitPeriod>(2000, RateLimitPeriod.Day);
+
+            CurrentGeneralPerMinute = 600;
+            CurrentGeneralPerMonth = 10000000;
+            CurrentMinuteForecast = 2000;
+            CurrentHourlyForecast = 2000;
+            CurrentNationalWeatherAlerts = 2000;
+            CurrentHistoricalWeather = 2000;
         }
     }
 }

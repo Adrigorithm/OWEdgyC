@@ -12,6 +12,9 @@ namespace OWEdgyC.Constants
         public ProfessionalRateLimit() {
             GeneralPerMinute = new KeyValuePair<int, RateLimitPeriod>(30000, RateLimitPeriod.Minute);
             GeneralPerMonth = new KeyValuePair<long, RateLimitPeriod>(1000000000, RateLimitPeriod.Month);
+
+            CurrentGeneralPerMinute = 30000;
+            CurrentGeneralPerMonth = 1000000000;
         }
     }
 }

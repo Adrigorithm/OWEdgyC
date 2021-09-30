@@ -12,15 +12,11 @@ namespace OWEdgyC.Clients
     {
         private OpenWeatherWebSocket _webSocket;
         public OpenWeatherClient(OpenWeatherConfiguration config) : base(config) {
-            _webSocket = new OpenWeatherWebSocket();
+            _webSocket = new OpenWeatherWebSocket(config);
         }
 
         ~OpenWeatherClient() {
             Dispose();
-        }
-
-        public async Task GetCurrentWeatherAsync(string city) {
-
         }
 
         public override void Dispose() { }

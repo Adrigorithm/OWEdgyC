@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 namespace OWEdgyC.Configurations
 {
     public sealed class OpenWeatherConfiguration {
-        private string _token = "";
-        private Subscription _subscription;
+        internal string Token = "";
+        internal Subscription Subscription;
 
         public OpenWeatherConfiguration(string token, Subscription subscription) {
             if(string.IsNullOrWhiteSpace(token))
                 throw new ArgumentNullException("Token cannot be null, empty, or all whitespace.");
 
-            _token = token.Trim();
-            _subscription = subscription;
+            Token = token.Trim();
+            Subscription = subscription;
         }
     }
 }
